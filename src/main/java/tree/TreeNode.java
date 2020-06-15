@@ -1,5 +1,7 @@
 package tree;
 
+import org.junit.Test;
+
 public class TreeNode {
     public int val;
     public TreeNode left;
@@ -32,5 +34,14 @@ public class TreeNode {
 
     public void setRight(TreeNode right) {
         this.right = right;
+    }
+    @Test
+    public void test() {
+
+        Integer[] arr = new Integer[]{1, 2};
+        BinaryTree tree1 = new BinaryTree();
+        TreeNode root = tree1.setTree(arr);
+//        System.out.println(helper(root, 1));
+
     }
 }
